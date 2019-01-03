@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    tools:context=".DashboardActivity.DashboardActivity">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardMeuNeon"
+        style="@style/DashboardCardView"
+        app:cardBackgroundColor="#0000c6"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/DashboardText"
+                android:text="meu neon" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/img_neon_plus"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/credit_card" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:padding="5dp"
+                    android:text="2 / 10"
+                    android:textColor="#FFF"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAvatarMeuNeon"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="60dp"
+                android:background="@drawable/app_avatar_background"
+                android:paddingBottom="15dp"
+                android:scaleX=".6"
+                android:scaleY=".6"
+                android:text="MN"
+                android:textColor="#CCC"
+                android:textSize="35sp" />
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardSaldo"
+        style="@style/DashboardCardView"
+        app:cardBackgroundColor="#0066c6"
+        app:layout_constraintTop_toBottomOf="@+id/cardMeuNeon">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_saldo"
+                style="@style/LeftCell"
+                android:text="saldo" />
+
+            <Button
+                android:id="@+id/btn_saldo_valor"
+                style="@style/RightCell"
+                android:text="R$ 2348,76" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardInvestimentos"
+        style="@style/DashboardCardView"
+        app:cardBackgroundColor="#009bc6"
+        app:layout_constraintTop_toBottomOf="@+id/cardSaldo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_investimentos"
+                style="@style/LeftCell"
+                android:text="investimentos" />
+
+            <Button
+                android:id="@+id/btn_invest_valor"
+                style="@style/RightCell"
+                android:text="R$ 2348,76" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardCredito"
+        style="@style/DashboardCardView"
+        app:cardBackgroundColor="#40d6cc"
+        app:layout_constraintTop_toBottomOf="@+id/cardInvestimentos">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/LeftCell"
+                android:text="credito" />
+
+            <Button
+                android:id="@+id/btn_credit_valor"
+                style="@style/RightCell"
+                android:text="R$ 2348,76" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardIndicacoes"
+        style="@style/DashboardCardView"
+        app:cardBackgroundColor="#56e4a7"
+        app:layout_constraintTop_toBottomOf="@+id/cardCredito">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/LeftCell"
+                android:text="indicaçōes" />
+
+            <Button
+                style="@style/RightCell"
+                android:background="@drawable/dashboard_indicacoes"
+                android:scaleX=".5"
+                android:scaleY=".8"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>
